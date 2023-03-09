@@ -7,8 +7,9 @@ const Favourite = ({}) => {
   
   return (
     <View style={styles.mainContainer}>
-      <Text style={{color:COLORS.black}}>Favourite Screen</Text>
-    </View>
+    <Text style={{fontSize:20,color:COLORS.white,fontWeight:'600'}}>Favorites</Text>
+
+  </View>
   );
 };
 
