@@ -3,13 +3,13 @@ import {View, Text} from 'react-native';
 import { COLORS } from '../../../shared/theme/colors';
 import styles from './styles';
 
-const Login = ({}) => {
+const Download = ({}) => {
   
   return (
     <View style={styles.mainContainer}>
-      <Text style={{color:COLORS.black}}>Milestone Screen</Text>
+      <Text style={{fontSize:20,color:COLORS.white}}>Downloads</Text>
     </View>
   );
 };
 
-export default Login;
+export default Download;

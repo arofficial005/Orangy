@@ -4,11 +4,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CustomText from '@components/custom/customText';
 import styles from './styles';
-import MileStones from '@screens/general/MileStones';
 import { COLORS } from '@theme/colors';
-import Rewards from '@screens/general/Rewards';
 import Map from '@screens/general/Map';
-import Vanues from '@screens/general/Venues';
 import About from '@screens/general/About';
 import { navigate } from '@services/nav.service';
 
@@ -21,7 +18,7 @@ type RenderTabIconProps = {
 
 function RenderTabIcon({ routeName, isFocused }: RenderTabIconProps) {
   switch (routeName) {
-    case 'STATS':
+    case 'Download':
       return (
         isFocused ?
           <Image
@@ -33,10 +30,11 @@ function RenderTabIcon({ routeName, isFocused }: RenderTabIconProps) {
           <Image
             style={styles.tabBarIconImage}
             resizeMode="contain"
+            
             source={require('@assets/BottomTabIcons/Downloads.png')}
           />
       );
-    case 'MAP':
+    case 'Orangy':
       return (
         isFocused ?
           <Image
@@ -53,7 +51,7 @@ function RenderTabIcon({ routeName, isFocused }: RenderTabIconProps) {
 
       );
 
-    case 'ABOUT':
+    case 'Favourite':
       return (
         isFocused ?
           <Image
@@ -147,29 +145,32 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 
 import { ROUTES } from '@utils/routes';
+import Download from '../../../screens/general/Download';
+import Orangy from '../../../screens/general/Map';
+import Favourite from '../../../screens/general/About';
 const Stack = createStackNavigator();
 
 
-const MilestoneStack = () => {
+const DownloadStack = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name={ROUTES.MILESTONECREEN} component={MileStones} />
+      <Stack.Screen name={ROUTES.DownloadScreen} component={Download} />
     </Stack.Navigator>
   );
 };
 
-const MapStack = () => {
+const OrangyStack = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name={ROUTES.MAPSCREEN} component={Map} />
+      <Stack.Screen name={ROUTES.OrangyScreen} component={Orangy} />
     </Stack.Navigator>
   );
 };
 
-const AboutStack = () => {
+const FavouriteStack = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name={ROUTES.ABOUTSCREEN} component={About} />
+      <Stack.Screen name={ROUTES.FavouriteScreen} component={Favourite} />
     </Stack.Navigator>
   );
 };
@@ -183,9 +184,9 @@ export default function BottomTabs() {
         headerShown: false,
         unmountOnBlur:true
       }}>
-      <Tab.Screen name={ROUTES.MILESTONES} component={MilestoneStack} />
-      <Tab.Screen name={ROUTES.MAP} component={MapStack} />
-      <Tab.Screen name={ROUTES.ABOUT} component={AboutStack} />
+      <Tab.Screen name={ROUTES.Download} component={DownloadStack} />
+      <Tab.Screen name={ROUTES.Orangy} component={OrangyStack} />
+      <Tab.Screen name={ROUTES.Favourite} component={FavouriteStack} />
 
     </Tab.Navigator>
   );
