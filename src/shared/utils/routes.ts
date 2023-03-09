@@ -1,0 +1,23 @@
+export const ROUTES = {
+  WELCOME: 'welcome',
+  DASHBOARD:'Dashboard',
+  LOGIN: 'login',
+  REGISTER:'register',
+  FORGOTPASSWORD:'forgotPassword',
+  CONFIRMATIONEMAIL:'confirmationEmail',
+  RESETPASSWORD:'resetPassword',
+  ACCOUNTSETTINGCLIENT:'accountSettingClient',
+  ACCOUNTSETTINGCOACH:'accountSettingCoach',
+  VENUESLOCKED:'Venueslocked',
+  MILESTONES:'STATS',
+  REWARDS:'REWARDS',
+  MAP:'MAP',
+  VANUES:'VENUES',
+  ABOUT:'ABOUT',
+  REWARDSCREEN:'rewardScreen',
+  VENUESCREEN:'venueScreen',
+  MILESTONECREEN:'milestoneScreen',
+  MAPSCREEN:'mapScreen',
+  ABOUTSCREEN:'aboutScreen',
+  QRSCANNER:'qrScanner'
+};
