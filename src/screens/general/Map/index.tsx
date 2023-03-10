@@ -9,7 +9,7 @@ const Orangy = ({}) => {
   return (
     <View style={styles.mainContainer}>
       <Text style={{fontSize:20,color:COLORS.yellow,fontWeight:'600'}}>Orangy</Text>
-      <View style={{height:38,backgroundColor:COLORS.black1,alignItems:'center',justifyContent:'center',marginTop:25,elevation:5,borderRadius:13}}>
+      <View style={{height:38,backgroundColor:COLORS.black1,alignItems:'center',justifyContent:'center',marginTop:25,borderRadius:13}}>
       <View style={{height: 38, flexDirection: 'row'}}>
         <View
           style={[

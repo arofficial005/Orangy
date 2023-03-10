@@ -8,8 +8,8 @@ const Download = ({}) => {
   return (
     <View style={styles.mainContainer}>
       <Text style={{fontSize:20,color:COLORS.white,fontWeight:'600'}}>Downloads</Text>
-      <View style={{height:38,backgroundColor:COLORS.black1,alignItems:'center',justifyContent:'center',marginTop:25,elevation:5,borderRadius:13}}>
-      <View style={{height: 38, flexDirection: 'row'}}>
+      <View style={{height:38,backgroundColor:COLORS.black1,alignItems:'center',justifyContent:'center',marginTop:25,borderRadius:13}}>
+      <View style={{height: "100%",width:'100%', flexDirection: 'row'}}>
         <View
           style={[
             styles.change,
@@ -19,7 +19,7 @@ const Download = ({}) => {
             <Text
               style={[
                 styles.textStyle,
-                {color: !show ? COLORS.black : COLORS.white},
+                {color: !show ? COLORS.black : COLORS.white,},
               ]}>
               Videos
             </Text>
