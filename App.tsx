@@ -8,8 +8,9 @@ import Toast from 'react-native-toast-message';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import Routes from './src/routes';
-import { initialConfig } from '@utils/config';
+import { initialConfig } from './src/shared/utils/config';
 import SplashScreen from 'react-native-splash-screen'
+import { StatusBar } from 'react-native';
 
 const App = () => {
 
@@ -36,6 +37,7 @@ const App = () => {
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <SafeAreaProvider>
+        <StatusBar hidden />
           <NavigationContainer ref={navigationRef} linking={cohereLinking}>
             <Routes />
           
