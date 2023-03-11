@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {COLORS} from '@theme/colors';
+import {COLORS} from '../../../shared/theme/colors';
 
 const styles = StyleSheet.create({
   mainContainer: {
@@ -47,6 +47,8 @@ const styles = StyleSheet.create({
           },
           txt:{flexDirection:'row',flex:1,fontSize:20,fontWeight:'600',color:COLORS.white},
           txt1:{flexDirection:'row',flex:1,fontSize:12,fontWeight:'400',color:COLORS.black2,marginTop:10},
+          view1:{height:38,backgroundColor:COLORS.black1,alignItems:'center',justifyContent:'center',marginTop:25,borderRadius:13,marginBottom:22},
+          view2:{flexDirection:'row',flex:0.48,justifyContent:'center'},
 });
 
 export default styles;

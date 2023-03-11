@@ -5,9 +5,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import CustomText from '@components/custom/customText';
 import styles from './styles';
 import { COLORS } from '@theme/colors';
-import Map from '@screens/general/Map';
-import About from '@screens/general/About';
-import { navigate } from '@services/nav.service';
+import { ROUTES } from '@utils/routes';
+import Download from '../../../screens/general/Download';
+import Orangy from '../../../screens/general/Orangy';
+import Favourite from '../../../screens/general/Favourite';
 
 const Tab = createBottomTabNavigator();
 
@@ -144,11 +145,6 @@ function CustomTabbar({ state, descriptors, navigation }: CustomTabbarProps) {
 }
 import { createStackNavigator } from '@react-navigation/stack';
 
-
-import { ROUTES } from '@utils/routes';
-import Download from '../../../screens/general/Download';
-import Orangy from '../../../screens/general/Map';
-import Favourite from '../../../screens/general/About';
 const Stack = createStackNavigator();
 
 

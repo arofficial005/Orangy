@@ -1,7 +1,6 @@
 import {StyleSheet} from 'react-native';
-import {moderateScale} from '@theme/metrics';
-import {COLORS} from '@theme/colors';
-import {FONTS} from '@theme/fonts';
+import {COLORS} from '../../../shared/theme/colors';
+// import {FONTS} from '@theme/fonts';
 
 const styles = StyleSheet.create({
   mainContainer: {
@@ -33,6 +32,9 @@ const styles = StyleSheet.create({
   
   txt: {color: COLORS.white, fontSize: 15,alignItems:'center',marginLeft:10,justifyContent:'center',alignSelf:'center',},
   view1: {width: "100%", borderRadius: 21, height: 38, marginTop: 27,marginBottom:18},
+  txt3:{fontSize:20,color:COLORS.yellow,fontWeight:'600'},
+  view3:{height:38,backgroundColor:COLORS.black1,alignItems:'center',justifyContent:'center',marginTop:25,borderRadius:13},
+  view4:{backgroundColor:COLORS.yellow,width:128,height:26,alignSelf:'center',justifyContent:'center',alignItems:'center',borderRadius:5},
   list:{
     flexDirection:'row',
     alignItems:'center',
