@@ -30,7 +30,7 @@ function RenderTabIcon({ routeName, isFocused }: RenderTabIconProps) {
           <Image
             style={styles.tabBarIconImage}
             resizeMode="contain"
-            
+            tintColor={COLORS.tabs}
             source={require('@assets/BottomTabIcons/Downloads.png')}
           />
       );
@@ -46,6 +46,7 @@ function RenderTabIcon({ routeName, isFocused }: RenderTabIconProps) {
           <Image
             style={styles.tabBarIconImage}
             resizeMode="contain"
+            tintColor={COLORS.tabs}
             source={require('@assets/BottomTabIcons/Orangy.png')}
           />
 
@@ -63,7 +64,7 @@ function RenderTabIcon({ routeName, isFocused }: RenderTabIconProps) {
           <Image
             style={styles.tabBarIconImage}
             resizeMode="contain"
-
+            tintColor={COLORS.tabs}
             source={require('@assets/BottomTabIcons/Favourite.png')}
           />
 
