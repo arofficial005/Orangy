@@ -9,7 +9,8 @@ import { ROUTES } from '@utils/routes';
 import Download from '../../../screens/general/Download';
 import Orangy from '../../../screens/general/Orangy';
 import Favourite from '../../../screens/general/Favourite';
-
+import Svg, { Path } from 'react-native-svg';
+import { Heart } from 'iconsax-react';
 const Tab = createBottomTabNavigator();
 
 type RenderTabIconProps = {
@@ -18,10 +19,17 @@ type RenderTabIconProps = {
 };
 
 function RenderTabIcon({ routeName, isFocused }: RenderTabIconProps) {
+  const Down = require('../../../assets/BottomTabIcons/Downloads.svg');
   switch (routeName) {
     case 'Download':
       return (
+      //   <View>
+      //   <Svg width={24} height={24} viewBox="0 0 24 24">
+      //     <Path fill={'red'} d={Heart} />
+      //   </Svg>
+      // </View>
         isFocused ?
+
           <Image
             style={styles.tabBarIconImage}
             resizeMode="contain"

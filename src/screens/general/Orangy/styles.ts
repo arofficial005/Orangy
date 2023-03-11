@@ -11,9 +11,10 @@ const styles = StyleSheet.create({
   },
   change: {
     borderRadius: 15,
-    width: 160,
+    width: 150,
     justifyContent:'center',
     alignItems:'center',
+    height:26,
   },
   textStyle: {
     color: COLORS.white,

@@ -10,7 +10,9 @@ const styles = StyleSheet.create({
   },
   change: {
     borderRadius: 15,
-    width: 160,
+    width: 150,
+    height:26,
+    
     justifyContent:'center',
     alignItems:'center',
 
