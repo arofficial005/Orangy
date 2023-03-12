@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {View, Text, Pressable, Image, TextInput, FlatList} from 'react-native';
 import {COLORS} from '../../../shared/theme/colors';
 import { Paste } from './Paste';
-import { Search } from './Search';
+import  Search  from './Search';
 import styles from './styles';
 
 const Orangy = ({}) => {

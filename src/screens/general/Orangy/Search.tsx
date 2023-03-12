@@ -3,9 +3,9 @@ import React, {useState} from 'react';
 import {View, Text, Pressable, Image, TextInput, FlatList, TouchableOpacity} from 'react-native';
 import {COLORS} from '../../../shared/theme/colors';
 import { ROUTES } from '../../../shared/utils/routes';
-import DownloadNext from './DownloadNext';
+import DownloadNext from './Download';
 import styles from './styles';
-export const Search = () => {
+ const Search = () => {
   const navigation:any=useNavigation();
     const data = [
       {
@@ -81,3 +81,4 @@ export const Search = () => {
      
     );
   };
+  export default Search;
