@@ -16,7 +16,7 @@ const Orangy = ({}) => {
           <View
             style={[
               styles.change,
-              {backgroundColor: !show ? COLORS.yellow : COLORS.black1},
+              {backgroundColor: !show ? COLORS.yellow : '#24252d'},
             ]}>
             <Pressable onPress={() => setshow(false)}>
               <Text
@@ -32,7 +32,7 @@ const Orangy = ({}) => {
             style={[
               styles.change,
               {
-                backgroundColor: !show ? COLORS.black1 : COLORS.yellow,
+                backgroundColor: !show ? '#24252d' : COLORS.yellow,
               },
             ]}>
             <Pressable onPress={() => setshow(true)}>

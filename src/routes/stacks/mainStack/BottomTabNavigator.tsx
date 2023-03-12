@@ -183,7 +183,7 @@ function CustomTabbar({ state, descriptors, navigation }: CustomTabbarProps) {
   );
 }
 import { createStackNavigator } from '@react-navigation/stack';
-import DownloadNext from '../../../screens/general/Orangy/Download';
+import DownloadNext from '../../../screens/general/Orangy/DownloadNext';
 
 const Stack = createStackNavigator();
 
