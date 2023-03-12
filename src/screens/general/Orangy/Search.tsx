@@ -1,8 +1,12 @@
+import { useNavigation } from '@react-navigation/native';
 import React, {useState} from 'react';
-import {View, Text, Pressable, Image, TextInput, FlatList} from 'react-native';
+import {View, Text, Pressable, Image, TextInput, FlatList, TouchableOpacity} from 'react-native';
 import {COLORS} from '../../../shared/theme/colors';
+import { ROUTES } from '../../../shared/utils/routes';
+import DownloadNext from './Download';
 import styles from './styles';
 export const Search = () => {
+  const navigation:any=useNavigation();
     const data = [
       {
         img: require('../../../assets/BottomTabIcons/Video.png'),
@@ -48,11 +52,13 @@ export const Search = () => {
               placeholderTextColor={'#FFFFFF33'}
             />
           </View>
+          
         </View>
         <FlatList
           showsVerticalScrollIndicator={false}
           data={data}
           renderItem={({item}) => (
+            <Pressable onPress={navigation.navigate(ROUTES.DownloadNext_Screen)}>
             <View style={[styles.list]}>
               <View style={{flexDirection: 'row', flex: 0.48}}>
                 <Image style={styles.img} source={item.img} />
@@ -68,8 +74,10 @@ export const Search = () => {
                 </View>
               </View>
             </View>
+            </Pressable>
           )}
         />
       </>
+     
     );
   };

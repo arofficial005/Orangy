@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, Pressable, FlatList, Image} from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import {COLORS} from '../../../shared/theme/colors';
 import styles from './styles';
 export const Songs = () => {
@@ -31,6 +32,7 @@ export const Songs = () => {
           showsVerticalScrollIndicator={false}
           data={data}
           renderItem={({item}) => (
+            <TouchableOpacity>
             <View style={[styles.list]}>
               <View style={styles.view2}>
                 <Image style={styles.imgg} source={item.img} />
@@ -43,6 +45,7 @@ export const Songs = () => {
                 </View>
               </View>
             </View>
+            </TouchableOpacity>
           )}
         />
       </>

@@ -1,23 +1,12 @@
 export const ROUTES = {
-  WELCOME: 'welcome',
-  DASHBOARD:'Dashboard',
-  LOGIN: 'login',
-  REGISTER:'register',
-  FORGOTPASSWORD:'forgotPassword',
-  CONFIRMATIONEMAIL:'confirmationEmail',
-  RESETPASSWORD:'resetPassword',
-  ACCOUNTSETTINGCLIENT:'accountSettingClient',
-  ACCOUNTSETTINGCOACH:'accountSettingCoach',
-  VENUESLOCKED:'Venueslocked',
+
   Download:'Download',
-  REWARDS:'REWARDS',
   Orangy:'Orangy',
-  VANUES:'VENUES',
   Favourite:'Favourite',
-  REWARDSCREEN:'rewardScreen',
-  VENUESCREEN:'venueScreen',
   DownloadScreen:'DownloadScreen',
   OrangyScreen:'OrangyScreen',
   FavouriteScreen:'FavouriteScreen',
-  QRSCANNER:'qrScanner'
+  
+  DownloadNext_Screen:'DownloadNext_Screen',
+
 };

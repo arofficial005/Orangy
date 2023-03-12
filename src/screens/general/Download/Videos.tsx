@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, Pressable, FlatList, Image} from 'react-native';
+import {View, Text, Pressable, FlatList, Image, TouchableOpacity} from 'react-native';
 import {COLORS} from '../../../shared/theme/colors';
 import styles from './styles';
 
@@ -33,6 +33,7 @@ export const Videos = () => {
           showsVerticalScrollIndicator={false}
           data={data}
           renderItem={({item}) => (
+            <TouchableOpacity>
             <View style={[styles.list]}>
               <View style={{flexDirection: 'row', flex: 0.48}}>
                 <Image style={styles.img} source={item.img} />
@@ -45,6 +46,7 @@ export const Videos = () => {
                 </View>
               </View>
             </View>
+            </TouchableOpacity>
           )}
         />
       </>

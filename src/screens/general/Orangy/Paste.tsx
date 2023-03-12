@@ -1,6 +1,8 @@
+import { useNavigation } from '@react-navigation/native';
 import React, {useState} from 'react';
-import {View, Text, Pressable, Image, TextInput, FlatList} from 'react-native';
+import {View, Text, Pressable, Image, TextInput, FlatList, TouchableOpacity} from 'react-native';
 import {COLORS} from '../../../shared/theme/colors';
+import { ROUTES } from '../../../shared/utils/routes';
 import styles from './styles';
 
 export const Paste = () => {
@@ -37,6 +39,7 @@ export const Paste = () => {
             showsVerticalScrollIndicator={false}
             data={data}
             renderItem={({item}) => (
+              <TouchableOpacity>
               <View style={[styles.list]}>
                 <View style={{flexDirection: 'row', flex: 0.48}}>
                   <Image style={styles.img} source={item.img} />
@@ -52,14 +55,13 @@ export const Paste = () => {
                   </View>
                 </View>
               </View>
+              </TouchableOpacity>
             )}
           />
           <View style={styles.view4}>
-            <Pressable>
               <Text style={{fontSize: 12, fontWeight: '700'}}>
                 Download Video
               </Text>
-            </Pressable>
           </View>
         </View>
       </>
